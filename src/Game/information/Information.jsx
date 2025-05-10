@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import InformationLayout from "./InformationLayout";
 
 function Information({ isDraw, isGameEnded, currentPlayer }) {

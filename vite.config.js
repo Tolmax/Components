@@ -14,12 +14,13 @@ export default defineConfig(({ mode }) => {
   const isDev = mode !== "production";
 
   return {
-    plugins: [
-      react({
-        babel: {
-          plugins: isDev ? ["check-prop-types"] : [],
-        },
-      }),
-    ],
+		base: "/Components/",
+		plugins: [
+			react({
+				babel: {
+					plugins: isDev ? ["check-prop-types"] : [],
+				},
+			}),
+		],
   };
 });

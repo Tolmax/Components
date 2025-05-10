@@ -1,4 +1,3 @@
-// import React, { useState } from "react";
 import FieldLayout from "./FieldLayout";
 
 function Field({
@@ -22,6 +21,7 @@ function Field({
 		[2, 4, 6], // диагонали
 	];
 
+				   // выявляем победителя
 	function checkWinner(field) {
 		for (let pattern of WIN_PATTERNS) {
 			const [a, b, c] = pattern;
@@ -72,15 +72,3 @@ function Field({
 }
 
 export default Field;
-
-// const [field, setField] = useState(Array(9).fill(null)); // 3x3 = 9 ячеек
-// const [isXTurn, setIsXTurn] = useState(true);
-
-// const handleClick = (index) => {
-// 	if (field[index] !== null) return; // нельзя перезаписывать ячейку
-
-// 	const newCells = [...field];
-// 	newCells[index] = isXTurn ? "X" : "O";
-// 	setField(newCells);
-// 	setIsXTurn(!isXTurn);
-// };

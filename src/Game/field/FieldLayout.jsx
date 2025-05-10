@@ -1,5 +1,12 @@
+import PropTypes from "prop-types";
 import styles from "./Field.module.css";
 import Button from "../button/Button";
+
+FieldLayout.propTypes = {
+	field: PropTypes.array,
+	handleClick: PropTypes.func,
+	resetGame: PropTypes.func,
+};
 
 function FieldLayout({ field, handleClick, resetGame }) {
 	return (
