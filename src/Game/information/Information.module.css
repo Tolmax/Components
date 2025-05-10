@@ -1,0 +1,10 @@
+.title {
+	font-weight: 700;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: rosybrown;
+	text-align: center;
+	padding: 20px;
+	width: 420px;
+	border: 1px solid #dbb9b9;
+}
